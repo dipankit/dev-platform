@@ -1,0 +1,23 @@
+.carousel-container, .carousel, .carousel-inner, .picsum-img-wrapper {
+    height: 350px !important;
+}
+
+.purple {
+    color: #45117E;
+}
+
+.orange {
+    color: #FF6200;
+}
+
+.slide-2 {
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-weight: bold;
+}
+.picsum-img-wrapper img {
+    height: 350px !important;
+    width: 100%;
+}

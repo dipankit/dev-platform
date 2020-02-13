@@ -1,0 +1,135 @@
+<div class="api-search">
+    <div class="search-container">
+        <div class="search-header">Search Our Capabilities</div>
+        <div class="search">
+            <input type="text" placeholder="Enter API to Search"/>
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+    </div>
+</div>
+
+<div class="filter-container">
+    <div class="filters">
+        <span class="filter-header">Filter By: </span>
+        <span class="filter-option" (click)="showProduct('all')" [ngClass]="{'selected': displayProduct == 'all'}">All</span>
+        <span class="filter-option" (click)="showProduct('customer')" [ngClass]="{'selected': displayProduct == 'customer'}">Customer</span>
+        <span class="filter-option" (click)="showProduct('shipping')" [ngClass]="{'selected': displayProduct == 'shipping'}">Shipping</span>
+        <span class="filter-option" (click)="showProduct('pricing')" [ngClass]="{'selected': displayProduct == 'pricing'}">Pricing</span>
+        <span class="filter-option" (click)="showProduct('services')" [ngClass]="{'selected': displayProduct == 'services'}">Customer Service</span>
+    </div>
+</div>
+
+<div class="product-container">
+
+    <div class="row products col-md-12" *ngIf="displayProduct == 'all' || displayProduct == 'customer'" [@myAnimation]>
+        <div class="product-divider customer col-md-12">
+            <div class="hr-left"><hr /></div>
+            <div class="hr-text fa fa-users"><span>  Customer</span></div>
+            <div class="hr-right"><hr /></div>
+        </div>
+        <div class="product">
+            <div class="product-header">GetCustomerDetails</div>
+            <div class="product-content">This API allows a user to fetch all the details for a customer.</div>
+            <div class="product-footer"><button type="button" class="access-btn">+ Request Access</button></div>
+        </div>
+        <div class="product">
+            <div class="product-header">GetAddress</div>
+            <div class="product-content">This API allows a user to fetch the address details for a customer.</div>
+            <div class="product-footer"><button type="button" class="access-btn">+ Request Access</button></div>
+        </div>
+        <div class="product">
+            <div class="product-header">ValidateAddress</div>
+            <div class="product-content">This API enables a user to vaidate the address details for a customer.</div>
+            <div class="product-footer"><button type="button" class="access-btn">+ Request Access</button></div>
+        </div>
+        <div class="product">
+            <div class="product-header">GetAccountDetails</div>
+            <div class="product-content">This API allows a user to fetch the address details for a customer.</div>
+            <div class="product-footer"><button type="button" class="access-btn">+ Request Access</button></div>
+        </div>
+    </div>
+
+    <div class="row products col-md-12" *ngIf="displayProduct == 'all' || displayProduct == 'shipping'" [@myAnimation]>
+        <div class="product-divider shipping col-md-12">
+            <div class="hr-left"><hr /></div>
+            <div class="hr-text fa fa-truck"><span>  Shipping</span></div>
+            <div class="hr-right"><hr /></div>
+        </div>
+        <div class="product">
+            <div class="product-header">CreateConsigment</div>
+            <div class="product-content">This API enables a user to create a consignment.</div>
+            <div class="product-footer"><button type="button" class="access-btn">+ Request Access</button></div>
+        </div>
+        <div class="product">
+            <div class="product-header">CreateReturnCon</div>
+            <div class="product-content">This API enables a user to create a return consignment.</div>
+            <div class="product-footer"><button type="button" class="access-btn">+ Request Access</button></div>
+        </div>
+        <div class="product">
+            <div class="product-header">GetConDetails</div>
+            <div class="product-content">This API allows a user to get details of a consignment.</div>
+            <div class="product-footer"><button type="button" class="access-btn">+ Request Access</button></div>
+        </div>
+        <div class="product">
+            <div class="product-header">CreateMasterLabel</div>
+            <div class="product-content">This API allows a user to create a master label for a shipment.</div>
+            <div class="product-footer"><button type="button" class="access-btn">+ Request Access</button></div>
+        </div>
+    </div>
+
+    <div class="row products col-md-12" *ngIf="displayProduct == 'all' || displayProduct == 'pricing'" [@myAnimation]>
+        <div class="product-divider pricing col-md-12">
+            <div class="hr-left"><hr /></div>
+            <div class="hr-text fa fa-line-chart"><span>  Pricing, Rating & Invoicing</span></div>
+            <div class="hr-right"><hr /></div>
+        </div>
+        <div class="product">
+            <div class="product-header">GetRateQuote</div>
+            <div class="product-content">This API allows a user to get a rate quote.</div>
+            <div class="product-footer"><button type="button" class="access-btn">+ Request Access</button></div>
+        </div>
+        <div class="product">
+            <div class="product-header">MaintainRateCard</div>
+            <div class="product-content">This API allows a user to maintain a rate card.</div>
+            <div class="product-footer"><button type="button" class="access-btn">+ Request Access</button></div>
+        </div>
+        <div class="product">
+            <div class="product-header">GetPricingDetails</div>
+            <div class="product-content">This API allows a user to fetch pricing details.</div>
+            <div class="product-footer"><button type="button" class="access-btn">+ Request Access</button></div>
+        </div>
+        <div class="product">
+            <div class="product-header">MaintainDiscounts</div>
+            <div class="product-content">This API allows a user to maintain discounts.</div>
+            <div class="product-footer"><button type="button" class="access-btn">+ Request Access</button></div>
+        </div>
+    </div>
+
+    <div class="row products col-md-12" *ngIf="displayProduct == 'all' || displayProduct == 'services'" [@myAnimation]>
+        <div class="product-divider services col-md-12">
+            <div class="hr-left"><hr /></div>
+            <div class="hr-text fa fa-headphones"><span>  Customer Services</span></div>
+            <div class="hr-right"><hr /></div>
+        </div>
+        <div class="product">
+            <div class="product-header">CreateCase</div>
+            <div class="product-content">This API allows a user to create a case.</div>
+            <div class="product-footer"><button type="button" class="access-btn">+ Request Access</button></div>
+        </div>
+        <div class="product">
+            <div class="product-header">RaiseClaim</div>
+            <div class="product-content">This API allows a user to raise a claim.</div>
+            <div class="product-footer"><button type="button" class="access-btn">+ Request Access</button></div>
+        </div>
+        <div class="product">
+            <div class="product-header">CreateSalesInquiry</div>
+            <div class="product-content">This API allows a user to create a sales inquiry.</div>
+            <div class="product-footer"><button type="button" class="access-btn">+ Request Access</button></div>
+        </div>
+        <div class="product">
+            <div class="product-header">CustomerMaintenance</div>
+            <div class="product-content">This API allows a user to maintain data for a customer.</div>
+            <div class="product-footer"><button type="button" class="access-btn">+ Request Access</button></div>
+        </div>
+    </div>
+</div>

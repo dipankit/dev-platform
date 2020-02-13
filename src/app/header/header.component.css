@@ -1,0 +1,28 @@
+img {
+    height: 50px;
+}
+
+.nav {
+    width: 100%;
+}
+
+.navbar-header {
+    text-align: center;
+}
+
+.navbar-brand {
+    width: 65%;
+    height: 100%;
+    padding: 0;
+}
+
+.container-fluid {
+    display: flex;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+}

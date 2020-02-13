@@ -1,0 +1,73 @@
+<div class="container-fluid">
+    <app-carousel></app-carousel>
+</div>
+<div class="container">
+    <div class="row content-header">
+        <div class="col-md-4 product-header">Opportunities to Collaborate</div>
+    </div>
+
+    <div class="row product-container">
+        <div class="product col-md-12">
+            <div class="product card">
+                <mat-card class="example-card">
+                    <mat-card-content>
+                        <div class="card-img customer-img"></div>
+                        <div class="card-content">
+                            <div class="header">Customer</div>
+                            <div class="center">Connecting people with goods, services, ideas and technologies</div>
+                            <div class="footer" (click)="navigate('customer', 'customer')">Know More..</div>
+                        </div>
+                    </mat-card-content>
+                </mat-card>
+            </div>
+            <div class="product card">
+                <mat-card class="example-card">
+                    <mat-card-content>
+                        <div class="card-img shipment-img"></div>
+                        <div class="card-content">
+                            <div class="header">Shipping</div>
+                            <div class="center">Providing online tools for shipping, monitoring and tracking</div>
+                            <div class="footer" (click)="navigate('customer', 'shipping')">Know More..</div>
+                        </div>
+                    </mat-card-content>
+                </mat-card>
+            </div>
+            <div class="product card">
+                <mat-card class="example-card">
+                    <mat-card-content>
+                        <div class="card-img pricing-img"></div>
+                        <div class="card-content">
+                            <div class="header">Pricing, Rating & Invoicing</div>
+                            <div class="center">Providing rate tools to look up your shipping costs quickly and easily</div>
+                            <div class="footer" (click)="navigate('customer', 'pricing')">Know More..</div>
+                        </div>
+                    </mat-card-content>
+                </mat-card>
+            </div>
+            <div class="product card">
+                <mat-card class="example-card">
+                    <mat-card-content>
+                        <div class="card-img services-img"></div>
+                        <div class="card-content">
+                            <div class="header">Customer Services</div>
+                            <div class="center">Helping you with all your queries and concerns</div>
+                            <div class="footer" (click)="navigate('customer', 'services')">Know More..</div>
+                        </div>
+                    </mat-card-content>
+                </mat-card>
+            </div>
+        </div>
+    </div>
+
+    <div class="row integration">
+        <div class="integration-header">Let's Start Collaborating!</div>
+        <div class="integration-content">
+            Our products are backed by a team of passionate FedEx developers who are adding new code regularly. 
+            With a robust set of tools and resources at your fingertips, this platform can help you create new experiences 
+            and services for your customers. Join us for the next phase of digital shipping!
+        </div>
+        <div class="integration-footer">
+            <button type="button" class="btn btn-fedex">Get Started</button>
+        </div>
+    </div>
+</div>

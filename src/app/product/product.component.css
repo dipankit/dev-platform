@@ -1,0 +1,142 @@
+@media (min-width: 1500px) {
+    .container {
+        max-width: 1480px;
+    }
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.content-header {
+    display: block;
+    text-align: center;
+}
+
+.product-header {
+    display: inline-block;
+    font-size: 30px;
+    padding: 15px;
+    color: #572599;
+}
+
+.product-content {
+    max-width: 100%;
+}
+
+.product-container {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.product {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.customer {
+    padding: 0;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.customer div, .shipment div {
+    display: inline-block;
+    padding: 0;
+}
+
+.example-card {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 200px;
+    box-shadow: 4px 4px 4px #7c7c7c;
+}
+
+.mat-card-content {
+    display: flex !important;
+}
+
+.card-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 175px;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+.customer-img {
+    background-image: url('../../assets/img/customer-2.jpg');
+}
+
+.shipment-img {
+    background-image: url('../../assets/img/shipment-1.jpg');
+}
+
+.pricing-img {
+    background-image: url('../../assets/img/pricing.jpg');
+}
+
+.services-img {
+    background-image: url('../../assets/img/services-2.jpg');
+}
+
+.card {
+    margin-right: 20px;
+    margin-bottom: 15px;
+    width: 22%;
+}
+
+.card-content {
+    display: inline-block;
+    padding: 15px;
+    width: 65%;
+    color: #572599;
+    position: relative;
+}
+
+.card-content .header {
+    font-weight: bold;
+}
+
+.card-content .center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding: 5px;
+}
+
+.card-content .footer {
+    position: absolute;
+    cursor: pointer;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.card-content .footer:hover {
+    text-decoration: underline;
+    margin-bottom: 14px;   
+}
+
+.integration {
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+    color: #572599;
+}
+
+.integration-header {
+    display: inline-block;
+    width: 100%;
+    font-size: 30px;
+}
+
+.integration-content {
+    display: inline-block;
+    width: 80%;
+}
